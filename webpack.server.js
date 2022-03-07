@@ -13,7 +13,7 @@ config.target = 'node';
 config.mode = 'production';
 config.entry = './src/ssr/server/index.jsx';
 config.output = {
-    path: filepath.resolve(__dirname, "bundle/server-dist"),
+    path: filepath.resolve(__dirname, "build/server-dist"),
     filename: 'static/bundle.min.[contenthash].js',
     publicPath: '/',
     clean: true,

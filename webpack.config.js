@@ -14,7 +14,7 @@ const config = rootWebpack;
 config.mode = isProduction ? "production" : "development";
 config.entry = './src/index.tsx';
 config.output = {
-    path: filepath.resolve(__dirname, 'bundle/dist'),
+    path: filepath.resolve(__dirname, 'build/dist'),
     filename: isProduction ?
         'static/bundle.min.[contenthash].js' :
         'static/bundle.min.[hash].js',
@@ -29,7 +29,7 @@ config.optimization = {
 
 config.devServer = {
     static: {
-        directory: filepath.join(__dirname, "bundle/dist"),
+        directory: filepath.join(__dirname, "build/dist"),
     },
     port: 'auto',
     hot: true,

@@ -13,7 +13,7 @@ config.target = 'node';
 config.mode = 'production';
 config.entry = './src/ssr/edge/index.jsx';
 config.output = {
-    path: filepath.resolve(__dirname, "bundle/edge-dist"),
+    path: filepath.resolve(__dirname, "build/edge-dist"),
     filename: 'static/bundle.min.[contenthash].js',
     publicPath: '/',
     clean: true,
