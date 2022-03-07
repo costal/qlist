@@ -1,16 +1,14 @@
 import React from 'react';
-import { ReactKeycloakProvider } from '@react-keycloak/web';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import keycloak from "./auth/keycloak";
 
 // Routes
-import Hub from "./components/routes/Hub";
+import Hub from "../components/routes/Hub";
 
 // Style
-import './App.css';
-import './App.global.css';
+import '../App.css';
+import '../App.global.css';
 
-export default function App() {
+export default function SSRApp() {
     return (
         <div>
           <Routes>

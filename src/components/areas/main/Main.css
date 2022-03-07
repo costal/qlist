@@ -1,0 +1,17 @@
+* {
+    --grid-gap: 20px;
+}
+
+.homeView {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "tests user"
+        "tests stats";
+    column-gap: var(--grid-gap);
+    row-gap: var(--grid-gap);
+    background-color: var(--primary-off-white-color);
+    overflow-y: auto;
+}

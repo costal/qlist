@@ -1,0 +1,44 @@
+nav {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 3px 3px -3px hsl(224, 11%, 85%);
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.sectionItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 3 0 auto;
+    padding-right: 20px;
+}
+
+.userOptions {
+    display: flex;
+    align-items: center;
+}
+
+.testLoginButton {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}

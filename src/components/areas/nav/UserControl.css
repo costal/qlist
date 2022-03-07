@@ -1,0 +1,21 @@
+.userControl {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.bell {
+    font-size: 23px;
+    filter: grayscale(70%) opacity(0.4);
+}
+
+.userLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.userLink span {
+    font-weight: 500;
+}

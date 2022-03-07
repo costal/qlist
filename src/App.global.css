@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: var(--primary-color-dark);
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color-very-light);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

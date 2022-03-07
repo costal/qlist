@@ -1,0 +1,39 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color-dark);
+    filter: grayscale(70%) opacity(0.4);
+    border-radius: 2rem;
+    height: 2.4rem;
+}
+
+.activeNavLink,
+.navLink:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--primary-color-very-light);
+}
+
+.activeNavLink .linkText {
+    display: inline;
+    font-size: 1.05rem;
+}
+
+.linkIcon {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    margin: 0 1rem;
+}
+
+.linkText {
+    display: none;
+    margin-right: 1rem;
+}
